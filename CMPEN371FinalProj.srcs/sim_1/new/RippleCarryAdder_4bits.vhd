@@ -1,7 +1,7 @@
 -- Dominic Cronaur, Gabriel Genung
 -- dlc5994@psu.edu, mxg1342@psu.edu
 -- RippleCarryAdder_4bit.vhd
--- Version 3.0 , 02/14/2023
+-- Version 3.0 , 12/6/2024
 
 -- This file implements a design of 4-bits Ripple Carry Adder
 library IEEE;
