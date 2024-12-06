@@ -1,6 +1,5 @@
--- Team Number 7
--- Alfonzo Palerm, Gabriel Genung
--- amp7756@psu.edu, mxg1342@psu.edu
+-- Dominic Cronaur, Gabriel Genung
+-- dlc5994@psu.edu, mxg1342@psu.edu
 -- RippleCarryAdder_4bit.vhd
 -- Version 3.0 , 02/14/2023
 
