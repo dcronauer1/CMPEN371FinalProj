@@ -1,17 +1,16 @@
-## Team Number 7
-## Alfonzo Palerm.  Gabriel Genung
-## amp7756@psu.edu, mxg1342@psu.edu
+## Dominic Cronaur  Gabriel Genung
+## dlc5994@psu.edu, mxg1342@psu.edu
 ## Basys3_Master.xdc
-## Version 1.0 , 01/17/2023
+## Version 1.0 , 12/6/2024
 ## This file is a general .xdc for the Basys3 rev B board
 ## To use it in a project:
 ## - uncomment the lines corresponding to used pins
 ## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
 
 ## Clock signal
-#set_property PACKAGE_PIN W5 [get_ports clk]							
-	#set_property IOSTANDARD LVCMOS33 [get_ports clk]
-	#create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
+set_property PACKAGE_PIN W5 [get_ports clk]							
+	set_property IOSTANDARD LVCMOS33 [get_ports clk]
+	create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
  
 ## Switches
 #set_property PACKAGE_PIN V17 [get_ports {sw[0]}]					
