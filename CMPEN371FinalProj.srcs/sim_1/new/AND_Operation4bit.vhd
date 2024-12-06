@@ -1,24 +1,25 @@
--- Dr. Abdallah S. Abdallah 
--- aua639@psu.edu
--- or_gate.vhd
--- Version 1.0 , 09/17/2018
+-- Dominic Cronauer, Gabriel Genung
+-- dlc5994@psu.edu, mxg1342@psu.edu
+-- AND_Operation4bit.vhd
+-- Version 1.0 , 12/6/2024
 
--- This file implements a design simple OR gate
+-- AND operation 
 
 
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity or_gate is
+entity AND_Operation4bit is
 port ( 
 
-A,B : in  std_logic;
+A,B : in  std_logic_vector(3 downto 0);
+C_In: in std_l
 F : out  std_logic
 );
-end or_gate;
+end AND_Operation4bit;
 
 -- Simple OR gate design
-architecture rtl of or_gate is
+architecture rt of AND_Operation4bit is
 begin
  
     F <= A or B;
