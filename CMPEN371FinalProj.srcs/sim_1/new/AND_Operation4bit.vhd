@@ -1,4 +1,3 @@
--- Team Number (T-ZERO)
 -- Dr. Abdallah S. Abdallah 
 -- aua639@psu.edu
 -- or_gate.vhd
