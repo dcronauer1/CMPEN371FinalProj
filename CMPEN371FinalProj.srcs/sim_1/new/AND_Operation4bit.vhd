@@ -3,7 +3,7 @@
 -- AND_Operation4bit.vhd
 -- Version 1.0 , 12/6/2024
 
--- AND operation 
+-- 2 binary numbers AND operation 
 
 
 library IEEE;
@@ -13,15 +13,16 @@ entity AND_Operation4bit is
 port ( 
 
 A,B : in  std_logic_vector(3 downto 0);
-C_In: in std_l
-F : out  std_logic
+F : out  std_logic_vector(3 downto 0);
 );
 end AND_Operation4bit;
 
--- Simple OR gate design
-architecture rt of AND_Operation4bit is
+architecture behavioral of AND_Operation4bit is
 begin
  
-    F <= A or B;
+   F(0) <= A(0) AND B(0); --Double check me because I'm not sure this is how to implement this
+   F(1) <= A(1) AND B(1);
+   F(2) <= A(2) AND B(2);
+   F(3) <= A(3) AND B(3);
  
-end rtl;
+end behavioral;
