@@ -1,4 +1,3 @@
--- Team Number 404
 -- Gabriel Genung, Dominic Cornauer
 -- mxg1342@psu.edu, dlc5994@psu.edu
 -- ClockDivider.vhd
