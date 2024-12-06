@@ -1,21 +1,17 @@
--- Team Number (T-ZERO)
--- Dr. Abdallah S. Abdallah 
--- aua639@psu.edu
+-- Cominic Cronaur, Gabriel Genung
+-- dlc5994@psu.edu, mxg1342@psu.edu
 -- FullAdder_1bit.vhd
--- Version 2.0 , 02/18/2019
+-- Version 3.0 , 12/6/2024
 
--- This file implements a design of 1-bit Full-Adder Unit
+-- design of 1-bit Full-Adder
 library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity FullAdder_1bit is
 port(
   
-  B: in std_logic;
-  A: in std_logic;
+  A,B: in std_logic;
   Cin: in std_logic;
-  
-  
   SUM: out std_logic;
   Cout: out std_logic 
   );
