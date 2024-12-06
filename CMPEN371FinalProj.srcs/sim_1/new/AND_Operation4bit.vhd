@@ -20,9 +20,5 @@ end AND_Operation4bit;
 architecture behavioral of AND_Operation4bit is
 begin
  
-   F(0) <= A(0) AND B(0); --Double check me because I'm not sure this is how to implement this
-   F(1) <= A(1) AND B(1);
-   F(2) <= A(2) AND B(2);
-   F(3) <= A(3) AND B(3);
- 
+   F <= A AND B; --Double check me because I'm not sure this is how to implement this
 end behavioral;
