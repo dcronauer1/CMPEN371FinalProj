@@ -10,11 +10,8 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 entity AND_Operation4bit is
-port ( 
-
-A,B : in  std_logic_vector(3 downto 0);
-F : out  std_logic_vector(3 downto 0);
-);
+ port ( A,B : in  std_logic_vector(3 downto 0);
+ F : out  std_logic_vector(3 downto 0));
 end AND_Operation4bit;
 
 architecture behavioral of AND_Operation4bit is
