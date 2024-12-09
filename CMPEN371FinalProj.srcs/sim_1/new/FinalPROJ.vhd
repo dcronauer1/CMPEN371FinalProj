@@ -1,5 +1,4 @@
 ----------------------------------------------------------------------------------
--- Team Number 404
 -- Gabriel Genung, Dominic Cornauer
 -- mxg1342@psu.edu, dlc5994@psu.edu
 -- FinalPROJ.vhd
@@ -75,7 +74,7 @@ component MultipleOutputsOnto7SegDisplay is
 component AND_Operation4bit is
      port ( A,B : in  std_logic_vector(3 downto 0);
              F : out  std_logic_vector(3 downto 0));
-    end AND_Operation4bit;
+    end component;
     
 component OR_Operation4bit is
     port ( A,B : in  std_logic_vector(3 downto 0);
@@ -127,6 +126,7 @@ ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD
 AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>Data_Out);
 OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>Data_Out);
 XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>Data_Out);
+SegDisplay: MultipleOutputsOnto7SegDisplay port map(clk=>MainClk, value1=>"0000", value2=>"0000", value3=>"0000", value4=>Data_Out, segs=> , channels=> , dp=>Carry_Out);
 
 
 end Behavioral;
