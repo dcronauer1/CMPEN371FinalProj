@@ -29,11 +29,11 @@ begin
         Q<=A;
         else
             if(dir = '1') then
-                Q(2 downto 0) <= Q(3 downto 1);
+                Q(2 downto 0) <= Q(3 downto 1); --Right
                 Q(3) <= '0';
             else
-                Q(3 downto 1) <= Q(2 downto 0);
-                Q(3)<= '0';
+                Q(3 downto 1) <= Q(2 downto 0); --Left
+                Q(0)<= '0';
             end if;
         end if;
      end if;
