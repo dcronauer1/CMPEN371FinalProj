@@ -1,0 +1,15 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/AND_Operation4bit.vhd,1733760352,vhdl,,,,and_operation4bit,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/ClockDivider.vhd,1733760352,vhdl,,,,clockdivider,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/FinalPROJ.vhd,1733789700,vhdl,,,,finalproj,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/FullAdder_1bit.vhd,1733760352,vhdl,,,,fulladder_1bit,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/OR_Operation4bit.vhd,1733760352,vhdl,,,,or_operation4bit,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/One_to_SixteenDEMUX.vhd,1733788109,vhdl,,,,one_to_sixteen4bit_demux,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/PIPO_4bit.vhd,1733760352,vhdl,,,,pipo_4bit,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/RippleCarryAdder_4bits.vhd,1733760352,vhdl,,,,ripplecarryadder_4bit,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/XOR_Operation4bit.vhd,1733760352,vhdl,,,,xor_operation4bit,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd,1733787954,vhdl,,,,multipleoutputsonto7segdisplay,,,,,,,,
+C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd,1733787980,vhdl,,,,sequential_7segments_decoder,,,,,,,,

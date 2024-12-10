@@ -1,0 +1,22 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/AND_Operation4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AND_Operation4bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/ClockDivider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ClockDivider'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/FullAdder_1bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FullAdder_1bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MultipleOutputsOnto7SegDisplay'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/OR_Operation4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'OR_Operation4bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/One_to_SixteenDEMUX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'One_to_Sixteen4Bit_DEMUX'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/PIPO_4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PIPO_4bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/RippleCarryAdder_4bits.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RippleCarryAdder_4bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Sequential_7Segments_Decoder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/XOR_Operation4bit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XOR_Operation4bit'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/FinalPROJ.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FinalPROJ'

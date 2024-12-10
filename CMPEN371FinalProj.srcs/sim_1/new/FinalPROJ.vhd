@@ -20,6 +20,8 @@ entity FinalPROJ is
            OP_Code : in STD_LOGIC_VECTOR (3 downto 0);
            Extra : in STD_LOGIC;
            Pause : in STD_LOGIC;
+           Reset : in STD_LOGIC;
+           clk: in STD_LOGIC;
            Data_Out : out STD_LOGIC_VECTOR (3 downto 0);
            Carry_Out : out STD_LOGIC);
 end FinalPROJ;
@@ -34,7 +36,7 @@ component ClockDivider is
     
 component One_to_Sixteen4Bit_DEMUX is
     Port ( DataIn : in STD_LOGIC_VECTOR (3 downto 0);
-          SEL : in STD_LOGIC (3 downto 0);
+          SEL : in STD_LOGIC_VECTOR (3 downto 0);
            y0 : out STD_LOGIC_VECTOR (3 downto 0);
            y1 : out STD_LOGIC_VECTOR (3 downto 0);
            y2 : out STD_LOGIC_VECTOR (3 downto 0);
@@ -67,10 +69,12 @@ component MultipleOutputsOnto7SegDisplay is
         value2 : in std_logic_vector(3 downto 0);  
         value3 : in std_logic_vector(3 downto 0);
         value4 : in std_logic_vector(3 downto 0);
+        mclk : in std_logic;
         segs : out std_logic_vector(6 downto 0);
         channels : out std_logic_vector(3 downto 0);
         dp : out std_logic);
      end component;
+   
 component AND_Operation4bit is
      port ( A,B : in  std_logic_vector(3 downto 0);
              F : out  std_logic_vector(3 downto 0));
@@ -112,21 +116,23 @@ signal B_XOR: std_logic_vector (3 downto 0);
 --signal A_ODD: std_logic_vector (3 downto 0);
 --signal A_EVEN: std_logic_vector (3 downto 0);
 --signal A_PRIME: std_logic_vector (3 downto 0);
+signal Display_data:std_logic_vector (3 downto 0);
+signal dp_data:std_logic;
 
 begin
 
-Clock1: ClockDivider port map(clk=>Clock, clkout=>MainClk);
+Clock1: ClockDivider port map(clk=>clk, clkout=>MainClk);
 Reg1: PIPO_4bit port map(A=>Ain, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>A_Reg);
 Reg2: PIPO_4bit port map(A=>Bin, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>B_Reg);
 Reg3: PIPO_4bit port map(A=>OP_Code, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>OP_Reg);
     --Need to add extra 1 bit register for extra data line
-ADemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>A_Reg, SEL=>OP_Reg, y0=>A_ADD, y1=>A_AND, y2=>A_OR, y3=>A_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
-BDemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>B_Reg, SEL=>OP_Reg, y0=>B_ADD, y1=>B_AND, y2=>B_OR, y3=>B_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
-ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD, EX_SUM=>Data_Out, EX_Cout=>Carry_Out);
-AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>Data_Out);
-OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>Data_Out);
-XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>Data_Out);
-SegDisplay: MultipleOutputsOnto7SegDisplay port map(clk=>MainClk, value1=>"0000", value2=>"0000", value3=>"0000", value4=>Data_Out, segs=> , channels=> , dp=>Carry_Out);
+ADemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>A_Reg, SEL=>OP_Reg, y0=>A_ADD, y1=>A_AND, y2=>A_OR, y3=>A_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
+BDemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>B_Reg, SEL=>OP_Reg, y0=>B_ADD, y1=>B_AND, y2=>B_OR, y3=>B_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
+ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD, EX_SUM=>Display_data, EX_Cout=>dp_data);
+AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>Display_data);
+OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>Display_data);
+XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>Display_data);
+Display: MultipleOutputsOnto7SegDisplay port map(clk=>MainClk, value1=>"0000", value2=>"0000", value3=>"0000", value4=>Display_data, mclk=>MainClk, segs=>open , channels=>open , dp=>dp_data);
 
 
 end Behavioral;

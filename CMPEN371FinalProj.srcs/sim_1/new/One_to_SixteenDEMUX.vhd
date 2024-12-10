@@ -10,7 +10,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity One_to_Sixteen4Bit_DEMUX is
     port ( DataIn : in STD_LOGIC_VECTOR (3 downto 0);
-          SEL : in STD_LOGIC (3 downto 0);
+          SEL : in STD_LOGIC_VECTOR (3 downto 0);
            y0 : out STD_LOGIC_VECTOR (3 downto 0);
            y1 : out STD_LOGIC_VECTOR (3 downto 0);
            y2 : out STD_LOGIC_VECTOR (3 downto 0);
@@ -32,7 +32,7 @@ end One_to_Sixteen4Bit_DEMUX;
 architecture Behavioral of One_to_Sixteen4Bit_DEMUX is
 
 begin
-process(DataIn, SEL);
+process(DataIn, SEL)
 begin
     if(SEL = "0000") then
         y0 <= DataIn;
