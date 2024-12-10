@@ -353,3 +353,48 @@ selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDI
 // Tcl Message: update_compile_order -fileset sources_1 
 // Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:07s
 // Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 28m:08s
+// Elapsed time: 117 seconds
+selectCodeEditor("FinalPROJ.vhd", 613, 214); // ae (FinalPROJ.vhd)
+selectCodeEditor("FinalPROJ.vhd", 310, 195); // ae (FinalPROJ.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockDivider.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed time: 10 seconds
+selectCodeEditor("ClockDivider.vhd", 160, 303); // ae (ClockDivider.vhd)
+selectCodeEditor("ClockDivider.vhd", 160, 303); // ae (ClockDivider.vhd)
+typeControlKey((HResource) null, "ClockDivider.vhd", 'c'); // ae (ClockDivider.vhd)
+selectCodeEditor("ClockDivider.vhd", 152, 297); // ae (ClockDivider.vhd)
+typeControlKey((HResource) null, "ClockDivider.vhd", 'v'); // ae (ClockDivider.vhd)
+// Elapsed time: 10 seconds
+selectCodeEditor("ClockDivider.vhd", 93, 235); // ae (ClockDivider.vhd)
+selectCodeEditor("ClockDivider.vhd", 12, 243); // ae (ClockDivider.vhd)
+selectCodeEditor("ClockDivider.vhd", 2, 233); // ae (ClockDivider.vhd)
+// Elapsed time: 15 seconds
+selectCodeEditor("ClockDivider.vhd", 302, 113); // ae (ClockDivider.vhd)
+selectCodeEditor("ClockDivider.vhd", 99, 229); // ae (ClockDivider.vhd)
+selectCodeEditor("ClockDivider.vhd", 102, 403); // ae (ClockDivider.vhd)
+// Elapsed time: 17 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:18s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FinalPROJ.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 31m:20s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockDivider.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("ClockDivider.vhd", 155, 206); // ae (ClockDivider.vhd)
+typeControlKey((HResource) null, "ClockDivider.vhd", 'c'); // ae (ClockDivider.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FinalPROJ.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("FinalPROJ.vhd", 252, 224); // ae (FinalPROJ.vhd)
+selectCodeEditor("FinalPROJ.vhd", 233, 208); // ae (FinalPROJ.vhd)
+selectCodeEditor("FinalPROJ.vhd", 229, 202); // ae (FinalPROJ.vhd)
+typeControlKey((HResource) null, "FinalPROJ.vhd", 'v'); // ae (FinalPROJ.vhd)
+selectCodeEditor("FinalPROJ.vhd", 278, 247); // ae (FinalPROJ.vhd)
+selectCodeEditor("FinalPROJ.vhd", 272, 246); // ae (FinalPROJ.vhd)
+// Elapsed time: 15 seconds
+selectCodeEditor("FinalPROJ.vhd", 333, 252); // ae (FinalPROJ.vhd)
+selectCodeEditor("FinalPROJ.vhd", 412, 190); // ae (FinalPROJ.vhd)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClockDivider.vhd", 4); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FinalPROJ.vhd", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // C (RDIResourceCommand.RDICommands_SAVE_FILE)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:16s
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 32m:18s
