@@ -1,8 +1,0 @@
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: D:/VIVADO/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FinalPROJ_behav xil_defaultlib.FinalPROJ -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-ERROR: [VRFC 10-718] formal port <mclk> does not exist in entity <MultipleOutputsOnto7SegDisplay>.  Please compare the definition of block <MultipleOutputsOnto7SegDisplay> to its component declaration and its instantion to detect the mismatch. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sim_1/new/FinalPROJ.vhd:72]
-ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit finalproj in library work failed.
