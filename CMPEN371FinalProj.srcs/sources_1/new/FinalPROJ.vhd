@@ -31,7 +31,8 @@ architecture Behavioral of FinalPROJ is
     
 component ClockDivider is
     Port ( clk : in std_logic;
-        clkout : out std_logic);
+           pause : in std_logic;
+           clkout : out std_logic);
     end component;
     
 component One_to_Sixteen4Bit_DEMUX is
@@ -126,7 +127,7 @@ signal dp_data:std_logic;
 
 begin
 
-Clock1: ClockDivider port map(clk=>clk, clkout=>MainClk);
+Clock1: ClockDivider port map(clk=>clk, pause=>Pause, clkout=>MainClk);
 Reg1: PIPO_4bit port map(A=>Ain, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>A_Reg);
 Reg2: PIPO_4bit port map(A=>Bin, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>B_Reg);
 Reg3: PIPO_4bit port map(A=>OP_Code, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>OP_Reg);

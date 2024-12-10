@@ -4,7 +4,7 @@
 -- Version 1.0 , 11/21/2024
 
 
--- This file devides the master clock
+-- This file devides the master clock with active high clock pause
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -16,6 +16,7 @@ entity ClockDivider is
 port ( 
 
 clk : in std_logic;
+pause : in std_logic;
 clkout : out std_logic
 
 );
@@ -31,7 +32,7 @@ signal s: std_logic;
 begin
 	process(clk)
 	 begin
-	 
+if(pause = '0') then	 
    if (clk'event and clk = '1') then
          -- 
          -- The counter below will reset every 50000000 rising edges, which is every 6.250 Million cycles
@@ -42,6 +43,7 @@ begin
                  cnt <= cnt +1;
              end if;
      end if;
+ end if;
      end process;
     
       clkout <= s;

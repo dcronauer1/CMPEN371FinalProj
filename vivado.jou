@@ -23,3 +23,8 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/DFF.vhd w ]
+add_files C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/DFF.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
