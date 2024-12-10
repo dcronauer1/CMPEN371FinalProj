@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1733794771" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/MultipleOutputsOnto7SegDisplay.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1733796389" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/MultipleOutputsOnto7SegDisplay.dcp">
   <File Type="PA-TCL" Name="FinalPROJ.tcl"/>
   <File Type="REPORTS-TCL" Name="FinalPROJ_reports.tcl"/>
   <File Type="RDS-RDS" Name="FinalPROJ.vds"/>

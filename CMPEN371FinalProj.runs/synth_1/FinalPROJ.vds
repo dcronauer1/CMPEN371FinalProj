@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Dec  9 20:39:36 2024
-# Process ID         : 1700
+# Start of session at: Mon Dec  9 21:06:34 2024
+# Process ID         : 1536
 # Current directory  : C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.runs/synth_1
 # Command line       : vivado.exe -log FinalPROJ.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FinalPROJ.tcl
 # Log file           : C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.runs/synth_1/FinalPROJ.vds
@@ -19,7 +19,7 @@
 # Host memory        : 17120 MB
 # Swap memory        : 7247 MB
 # Total Virtual      : 24367 MB
-# Available Virtual  : 9776 MB
+# Available Virtual  : 10893 MB
 #-----------------------------------------------------------
 source FinalPROJ.tcl -notrace
 Command: read_checkpoint -auto_incremental -incremental C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/utils_1/imports/synth_1/MultipleOutputsOnto7SegDisplay.dcp
@@ -32,24 +32,24 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 19560
+INFO: [Synth 8-7075] Helper process launched with PID 5036
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.477 ; gain = 466.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1027.668 ; gain = 467.059
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'FinalPROJ' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:29]
-INFO: [Synth 8-3491] module 'ClockDivider' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/ClockDivider.vhd:15' bound to instance 'Clock1' of component 'ClockDivider' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:124]
+INFO: [Synth 8-3491] module 'ClockDivider' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/ClockDivider.vhd:15' bound to instance 'Clock1' of component 'ClockDivider' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:123]
 INFO: [Synth 8-638] synthesizing module 'ClockDivider' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/ClockDivider.vhd:25]
 INFO: [Synth 8-256] done synthesizing module 'ClockDivider' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/ClockDivider.vhd:25]
-INFO: [Synth 8-3491] module 'PIPO_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:13' bound to instance 'Reg1' of component 'PIPO_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:125]
+INFO: [Synth 8-3491] module 'PIPO_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:13' bound to instance 'Reg1' of component 'PIPO_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:124]
 INFO: [Synth 8-638] synthesizing module 'PIPO_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:21]
 INFO: [Synth 8-256] done synthesizing module 'PIPO_4bit' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:21]
-INFO: [Synth 8-3491] module 'PIPO_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:13' bound to instance 'Reg2' of component 'PIPO_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:126]
-INFO: [Synth 8-3491] module 'PIPO_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:13' bound to instance 'Reg3' of component 'PIPO_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:127]
-INFO: [Synth 8-3491] module 'One_to_Sixteen4Bit_DEMUX' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:11' bound to instance 'ADemux' of component 'One_to_Sixteen4Bit_DEMUX' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:129]
+INFO: [Synth 8-3491] module 'PIPO_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:13' bound to instance 'Reg2' of component 'PIPO_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:125]
+INFO: [Synth 8-3491] module 'PIPO_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd:13' bound to instance 'Reg3' of component 'PIPO_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:126]
+INFO: [Synth 8-3491] module 'One_to_Sixteen4Bit_DEMUX' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:11' bound to instance 'ADemux' of component 'One_to_Sixteen4Bit_DEMUX' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:128]
 INFO: [Synth 8-638] synthesizing module 'One_to_Sixteen4Bit_DEMUX' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:32]
 INFO: [Synth 8-256] done synthesizing module 'One_to_Sixteen4Bit_DEMUX' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:32]
-INFO: [Synth 8-3491] module 'One_to_Sixteen4Bit_DEMUX' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:11' bound to instance 'BDemux' of component 'One_to_Sixteen4Bit_DEMUX' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:130]
-INFO: [Synth 8-3491] module 'RippleCarryAdder_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd:10' bound to instance 'ADD1' of component 'RippleCarryAdder_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:131]
+INFO: [Synth 8-3491] module 'One_to_Sixteen4Bit_DEMUX' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:11' bound to instance 'BDemux' of component 'One_to_Sixteen4Bit_DEMUX' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:129]
+INFO: [Synth 8-3491] module 'RippleCarryAdder_4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd:10' bound to instance 'ADD1' of component 'RippleCarryAdder_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:130]
 INFO: [Synth 8-638] synthesizing module 'RippleCarryAdder_4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd:21]
 INFO: [Synth 8-3491] module 'FullAdder_1bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FullAdder_1bit.vhd:10' bound to instance 'FA0' of component 'FullAdder_1bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd:43]
 INFO: [Synth 8-638] synthesizing module 'FullAdder_1bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FullAdder_1bit.vhd:22]
@@ -58,24 +58,471 @@ INFO: [Synth 8-3491] module 'FullAdder_1bit' declared at 'C:/Users/gamec/AppData
 INFO: [Synth 8-3491] module 'FullAdder_1bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FullAdder_1bit.vhd:10' bound to instance 'FA2' of component 'FullAdder_1bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd:45]
 INFO: [Synth 8-3491] module 'FullAdder_1bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FullAdder_1bit.vhd:10' bound to instance 'FA3' of component 'FullAdder_1bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'RippleCarryAdder_4bit' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd:21]
-INFO: [Synth 8-3491] module 'AND_Operation4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/AND_Operation4bit.vhd:12' bound to instance 'AND1' of component 'AND_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:132]
+INFO: [Synth 8-3491] module 'AND_Operation4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/AND_Operation4bit.vhd:12' bound to instance 'AND1' of component 'AND_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:131]
 INFO: [Synth 8-638] synthesizing module 'AND_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/AND_Operation4bit.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'AND_Operation4bit' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/AND_Operation4bit.vhd:17]
-INFO: [Synth 8-3491] module 'OR_Operation4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/OR_Operation4bit.vhd:12' bound to instance 'OR1' of component 'OR_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:133]
+INFO: [Synth 8-3491] module 'OR_Operation4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/OR_Operation4bit.vhd:12' bound to instance 'OR1' of component 'OR_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:132]
 INFO: [Synth 8-638] synthesizing module 'OR_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/OR_Operation4bit.vhd:21]
 INFO: [Synth 8-256] done synthesizing module 'OR_Operation4bit' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/OR_Operation4bit.vhd:21]
-INFO: [Synth 8-3491] module 'XOR_Operation4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/XOR_Operation4bit.vhd:12' bound to instance 'XOR1' of component 'XOR_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:134]
+INFO: [Synth 8-3491] module 'XOR_Operation4bit' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/XOR_Operation4bit.vhd:12' bound to instance 'XOR1' of component 'XOR_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:133]
 INFO: [Synth 8-638] synthesizing module 'XOR_Operation4bit' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/XOR_Operation4bit.vhd:21]
 INFO: [Synth 8-256] done synthesizing module 'XOR_Operation4bit' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/XOR_Operation4bit.vhd:21]
-INFO: [Synth 8-3491] module 'MultipleOutputsOnto7SegDisplay' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd:13' bound to instance 'Display' of component 'MultipleOutputsOnto7SegDisplay' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:135]
-ERROR: [Synth 8-3493] module 'multipleoutputsonto7segdisplay' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd:13' does not have matching formal port for component port 'mclk' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:135]
-ERROR: [Synth 8-285] failed synthesizing module 'FinalPROJ' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:29]
+INFO: [Synth 8-3491] module 'MultipleOutputsOnto7SegDisplay' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd:13' bound to instance 'Display' of component 'MultipleOutputsOnto7SegDisplay' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'MultipleOutputsOnto7SegDisplay' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd:28]
+INFO: [Synth 8-3491] module 'ClockDivider' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/ClockDivider.vhd:15' bound to instance 'CLOCK' of component 'ClockDivider' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd:56]
+INFO: [Synth 8-3491] module 'Sequential_7Segments_Decoder' declared at 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:12' bound to instance 'DECODER' of component 'Sequential_7Segments_Decoder' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Sequential_7Segments_Decoder' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:29]
+WARNING: [Synth 8-614] signal 'flipper' is read in the process but is not in the sensitivity list [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:42]
+WARNING: [Synth 8-614] signal 'value1' is read in the process but is not in the sensitivity list [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:75]
+WARNING: [Synth 8-614] signal 'value2' is read in the process but is not in the sensitivity list [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:75]
+WARNING: [Synth 8-614] signal 'value3' is read in the process but is not in the sensitivity list [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:75]
+WARNING: [Synth 8-614] signal 'value4' is read in the process but is not in the sensitivity list [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'Sequential_7Segments_Decoder' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'MultipleOutputsOnto7SegDisplay' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'FinalPROJ' (0#1) [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:29]
+WARNING: [Synth 8-3848] Net Data_Out in module/entity FinalPROJ does not have driver. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:25]
+WARNING: [Synth 8-3848] Net Carry_Out in module/entity FinalPROJ does not have driver. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:26]
+WARNING: [Synth 8-3848] Net Extra_Reg in module/entity FinalPROJ does not have driver. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd:104]
+WARNING: [Synth 8-7129] Port Data_Out[3] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Data_Out[2] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Data_Out[1] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Data_Out[0] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Carry_Out in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Extra in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pause in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Reset in module FinalPROJ is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1132.504 ; gain = 571.504
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1136.777 ; gain = 576.168
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1136.777 ; gain = 576.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1136.777 ; gain = 576.168
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1136.777 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'OP_Codee[2]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Pause]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'F'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[0]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[0]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[1]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[1]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[2]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[2]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[3]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[3]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[4]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[4]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[5]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[5]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[6]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'segs[6]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[0]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[0]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[1]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[1]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[2]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[2]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[3]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'channels[3]'. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FinalPROJ_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FinalPROJ_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1222.812 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1222.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1222.812 ; gain = 662.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1222.812 ; gain = 662.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1222.812 ; gain = 662.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/utils_1/imports/synth_1/MultipleOutputsOnto7SegDisplay.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1222.812 ; gain = 662.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1222.812 ; gain = 662.203
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'y0_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:38]
+WARNING: [Synth 8-327] inferring latch for variable 'y1_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:40]
+WARNING: [Synth 8-327] inferring latch for variable 'y2_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'y3_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'y4_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'y5_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:48]
+WARNING: [Synth 8-327] inferring latch for variable 'y6_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'y7_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'y8_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'y9_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'y10_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'y11_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'y12_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'y13_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'y14_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 'y15_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'intAn_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'segs_reg' [C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd:81]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1222.812 ; gain = 662.203
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 4     
++---Registers : 
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    7 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 22    
+	   4 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 2     
+	   8 Input    1 Bit        Muxes := 4     
+	  10 Input    1 Bit        Muxes := 2     
+	  11 Input    1 Bit        Muxes := 2     
+	  12 Input    1 Bit        Muxes := 2     
+	  13 Input    1 Bit        Muxes := 2     
+	  14 Input    1 Bit        Muxes := 2     
+	  15 Input    1 Bit        Muxes := 2     
+	  16 Input    1 Bit        Muxes := 2     
+	  17 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Data_Out[3] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Data_Out[2] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Data_Out[1] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Data_Out[0] in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Carry_Out in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Extra in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Pause in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Reset in module FinalPROJ is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (ADemux/y0_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y0_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y0_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y0_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y1_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y1_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y1_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y1_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y2_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y2_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y2_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y2_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y3_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y3_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y3_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y3_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y4_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y4_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y4_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y4_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y5_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y5_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y5_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y5_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y6_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y6_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y6_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y6_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y7_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y7_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y7_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y7_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y8_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y8_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y8_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y8_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y9_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y9_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y9_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y9_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y10_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y10_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y10_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y10_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y11_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y11_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y11_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y11_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y12_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y12_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y12_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y12_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y13_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y13_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y13_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y13_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y14_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y14_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y14_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y14_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y15_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y15_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y15_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (ADemux/y15_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y0_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y0_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y0_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y0_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y1_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y1_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y1_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y1_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y2_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y2_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y2_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y2_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y3_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y3_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y3_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y3_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y4_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y4_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y4_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y4_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y5_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y5_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y5_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y5_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y6_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y6_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y6_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y6_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y7_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y7_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y7_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y7_reg[0]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y8_reg[3]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y8_reg[2]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y8_reg[1]) is unused and will be removed from module FinalPROJ.
+WARNING: [Synth 8-3332] Sequential element (BDemux/y8_reg[0]) is unused and will be removed from module FinalPROJ.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1222.812 ; gain = 662.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1319.605 ; gain = 758.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1319.605 ; gain = 758.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1329.160 ; gain = 768.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |     5|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 168 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:42 . Memory (MB): peak = 1545.965 ; gain = 899.320
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1545.965 ; gain = 985.355
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1545.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1545.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9a112095
 INFO: [Common 17-83] Releasing license: Synthesis
-40 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 20:40:01 2024...
+56 Infos, 172 Warnings, 29 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:53 . Memory (MB): peak = 1545.965 ; gain = 1175.938
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1545.965 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.runs/synth_1/FinalPROJ.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file FinalPROJ_utilization_synth.rpt -pb FinalPROJ_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 21:07:36 2024...
