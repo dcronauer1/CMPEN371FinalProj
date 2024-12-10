@@ -3,11 +3,11 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Dec  9 19:20:26 2024
-# Process ID         : 9000
+# Start of session at: Mon Dec  9 20:39:36 2024
+# Process ID         : 1700
 # Current directory  : C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.runs/synth_1
-# Command line       : vivado.exe -log MultipleOutputsOnto7SegDisplay.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultipleOutputsOnto7SegDisplay.tcl
-# Log file           : C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.runs/synth_1/MultipleOutputsOnto7SegDisplay.vds
+# Command line       : vivado.exe -log FinalPROJ.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FinalPROJ.tcl
+# Log file           : C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.runs/synth_1/FinalPROJ.vds
 # Journal file       : C:/Users/gamec/AppData/Roaming/SPB_Data/CMPEN371FinalProj/CMPEN371FinalProj.runs/synth_1\vivado.jou
 # Running On         : DESKTOP-KPURO8L
 # Platform           : Windows Server 2016 or Windows 10
@@ -19,6 +19,6 @@
 # Host memory        : 17120 MB
 # Swap memory        : 7247 MB
 # Total Virtual      : 24367 MB
-# Available Virtual  : 9930 MB
+# Available Virtual  : 9776 MB
 #-----------------------------------------------------------
-source MultipleOutputsOnto7SegDisplay.tcl -notrace
+source FinalPROJ.tcl -notrace

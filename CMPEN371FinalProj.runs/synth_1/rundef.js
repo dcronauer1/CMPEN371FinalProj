@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log MultipleOutputsOnto7SegDisplay.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultipleOutputsOnto7SegDisplay.tcl" );
+         "-log FinalPROJ.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FinalPROJ.tcl" );
 
 
 

@@ -25,4 +25,3 @@ begin
 	Cout <= (A AND B) OR (Cin AND A) OR (Cin AND B) ; 
 	
 end rtl;
-

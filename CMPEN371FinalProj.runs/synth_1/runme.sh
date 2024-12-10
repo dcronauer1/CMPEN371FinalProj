@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log MultipleOutputsOnto7SegDisplay.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MultipleOutputsOnto7SegDisplay.tcl
+EAStep vivado -log FinalPROJ.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source FinalPROJ.tcl

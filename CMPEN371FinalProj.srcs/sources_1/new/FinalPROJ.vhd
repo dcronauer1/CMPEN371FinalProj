@@ -134,5 +134,4 @@ OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>Display_data);
 XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>Display_data);
 Display: MultipleOutputsOnto7SegDisplay port map(clk=>MainClk, value1=>"0000", value2=>"0000", value3=>"0000", value4=>Display_data, mclk=>MainClk, segs=>open , channels=>open , dp=>dp_data);
 
-
 end Behavioral;

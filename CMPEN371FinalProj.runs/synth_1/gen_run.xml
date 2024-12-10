@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1733790023" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/MultipleOutputsOnto7SegDisplay.dcp">
-  <File Type="PA-TCL" Name="MultipleOutputsOnto7SegDisplay.tcl"/>
-  <File Type="REPORTS-TCL" Name="MultipleOutputsOnto7SegDisplay_reports.tcl"/>
-  <File Type="RDS-RDS" Name="MultipleOutputsOnto7SegDisplay.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="MultipleOutputsOnto7SegDisplay_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="MultipleOutputsOnto7SegDisplay_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="MultipleOutputsOnto7SegDisplay_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="MultipleOutputsOnto7SegDisplay.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="MultipleOutputsOnto7SegDisplay_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="MultipleOutputsOnto7SegDisplay_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1733794771" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/MultipleOutputsOnto7SegDisplay.dcp">
+  <File Type="PA-TCL" Name="FinalPROJ.tcl"/>
+  <File Type="REPORTS-TCL" Name="FinalPROJ_reports.tcl"/>
+  <File Type="RDS-RDS" Name="FinalPROJ.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="FinalPROJ_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="FinalPROJ_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="FinalPROJ_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="FinalPROJ.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="FinalPROJ_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="FinalPROJ_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd">
+    <File Path="$PSRCDIR/sources_1/new/AND_Operation4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ClockDivider.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FullAdder_1bit.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -23,9 +35,51 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/OR_Operation4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/One_to_SixteenDEMUX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PIPO_4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RippleCarryAdder_4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/XOR_Operation4bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FinalPROJ.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="MultipleOutputsOnto7SegDisplay"/>
+      <Option Name="TopModule" Val="FinalPROJ"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
