@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Dec 10 19:09:21 2024
-| Host         : Lenovo-Sextop-5 running 64-bit major release  (build 9200)
+| Date         : Wed Dec 11 16:02:56 2024
+| Host         : Meshroom-S running 64-bit major release  (build 9200)
 | Command      : report_utilization -file FinalPROJ_utilization_synth.rpt -pb FinalPROJ_utilization_synth.pb
 | Design       : FinalPROJ
 | Device       : xc7a35tcpg236-1
