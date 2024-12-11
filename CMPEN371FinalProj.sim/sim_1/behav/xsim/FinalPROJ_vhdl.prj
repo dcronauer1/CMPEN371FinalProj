@@ -1,16 +1,17 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/AND_Operation4bit.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/ClockDivider.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/FullAdder_1bit.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/AND_Operation4bit.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/ClockDivider.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/DFF.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/FullAdder_1bit.vhd" \
 "../../../../CMPEN371FinalProj.srcs/sources_1/new/MultipleOutputsOnto7SegDisplay.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/OR_Operation4bit.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/One_to_SixteenDEMUX.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/PIPO_4bit.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/RippleCarryAdder_4bits.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/OR_Operation4bit.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/One_to_SixteenDEMUX.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/PIPO_4bit.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/RippleCarryAdder_4bit.vhd" \
 "../../../../CMPEN371FinalProj.srcs/sources_1/new/Sequential_7Segments_Decoder_With2inputs.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/XOR_Operation4bit.vhd" \
-"../../../../CMPEN371FinalProj.srcs/sim_1/new/FinalPROJ.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/XOR_Operation4bit.vhd" \
+"../../../../CMPEN371FinalProj.srcs/sources_1/new/FinalPROJ.vhd" \
 
 # Do not sort compile order
 nosort
