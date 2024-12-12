@@ -19,8 +19,8 @@ entity FinalPROJ is
            Bin : in STD_LOGIC_VECTOR (3 downto 0);
            OP_Code : in STD_LOGIC_VECTOR (3 downto 0);
            Extra : in STD_LOGIC;
-           Pause : in STD_LOGIC;
-           Reset : in STD_LOGIC;
+           Pause : in STD_LOGIC;  --permanently pauses?
+           Reset : in STD_LOGIC; --not wired??
            clk: in STD_LOGIC;
            --Data_Out : out STD_LOGIC_VECTOR (3 downto 0);
           -- Carry_Out : out STD_LOGIC
@@ -173,6 +173,7 @@ signal M_ODD: std_logic_vector (3 downto 0);
 signal M_EVEN: std_logic_vector (3 downto 0);
 signal M_PRIME: std_logic_vector (3 downto 0);
 
+signal Dummy_Input : std_logic_vector(3 downto 0) := (others => '0'); --used for unused 1-16 MUX
 
 begin
 
@@ -189,15 +190,15 @@ ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD
 AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>M_AND);
 OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>M_OR);
 XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>M_XOR);
-RSHIFT: PIPO_4bit port map(A=>Ain, LorS=>'1', Dir=>'1', Enclk=>MainClk, B=>A_Reg);
-LSHIFT: PIPO_4bit port map(A=>Ain, LorS=>'1', Dir=>'0', Enclk=>MainClk, B=>A_Reg);
+RSHIFT: PIPO_4bit port map(A=>A_RShift, LorS=>'1', Dir=>'1', Enclk=>MainClk, B=>M_RSHIFT); --doesnt do anything
+LSHIFT: PIPO_4bit port map(A=>A_LShift, LorS=>'1', Dir=>'0', Enclk=>MainClk, B=>M_LSHIFT); --doesnt do anything
 ODD: IsOdd4bit port map(A=>A_ODD, EVEN=>'0', F=>M_ODD);
 EVEN: IsOdd4bit port map(A=>A_EVEN, EVEN=>'1', F=>M_EVEN); --dont need isEven <3
 PRIME: IsPrime4bit port map(A=>A_PRIME, F=>M_PRIME);
 
-DP<=dp_data;
+DP<=dp_data; --not working
 
-MUX1: One_to_SixteenMUX port map(DataOut=>Display_data, SEL=>OP_Reg, y0=>M_ADD, y1=>M_AND, y2=>M_OR, y3=>M_XOR, y4=>M_RSHIFT, y5=>M_LSHIFT, y6=>M_ODD, y7=>M_EVEN, y8=>M_PRIME, y9=>M_XOR, y10=>M_XOR, y11=>M_XOR, y12=>M_XOR, y13=>M_XOR, y14=>M_XOR, y15=>M_XOR);
+MUX1: One_to_SixteenMUX port map(DataOut=>Display_data, SEL=>OP_Reg, y0=>M_ADD, y1=>M_AND, y2=>M_OR, y3=>M_XOR, y4=>M_RSHIFT, y5=>M_LSHIFT, y6=>M_ODD, y7=>M_EVEN, y8=>M_PRIME, y9=>Dummy_Input, y10=>Dummy_Input, y11=>Dummy_Input, y12=>Dummy_Input, y13=>Dummy_Input, y14=>Dummy_Input, y15=>Dummy_Input);
 
 Display: SevenSeg_Decoder port map(X=>Display_data, AN=>AN, DP=>DP, CXX=>CXX);
 

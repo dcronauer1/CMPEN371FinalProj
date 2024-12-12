@@ -3,7 +3,7 @@
 --One_to_SixteenMUX.vhd
 -- Version 1.0 , 12/10/2024
 
---implements a one to sixteen demux with disconnect z 
+--implements a one to sixteen mux with disconnect z 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 

@@ -18,4 +18,7 @@ begin
          (not A(3) and not A(2) and A(1)) or
          (A(2) and not A(1) and A(0)) or
          (not A(3) and A(2) and A(0));
+    F(1) <= '0';
+    F(2) <= '0';
+    F(3) <= '0';
 end rtl;
