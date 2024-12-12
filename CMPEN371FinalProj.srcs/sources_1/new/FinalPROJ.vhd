@@ -24,11 +24,11 @@ entity FinalPROJ is
            clk: in STD_LOGIC;
            --Data_Out : out STD_LOGIC_VECTOR (3 downto 0);
           -- Carry_Out : out STD_LOGIC
-          dp : out std_logic;
+          DP : out std_logic;
 		-- The anodes will be treated as if they are different 
 		-- communication channels, which are getting activated and deactivated according to the internal subclock (Sclk)
-		channels : out std_logic_vector(3 downto 0);
-	    segs : out std_logic_vector(6 downto 0)
+		AN : out std_logic_vector(3 downto 0);
+	    CXX : out std_logic_vector(6 downto 0)
           );
 end FinalPROJ;
 
@@ -37,7 +37,7 @@ architecture Behavioral of FinalPROJ is
     
 component ClockDivider is
     Port ( clk : in std_logic;
-           pause : in std_logic;
+           Pause : in std_logic;
            clkout : out std_logic);
     end component;
     
@@ -76,15 +76,12 @@ component DFF is
            OutD : out STD_LOGIC);
     end component;
 
-component MultipleOutputsOnto7SegDisplay is
-    port ( clk :in std_logic;
- 	    value1 : in std_logic_vector(3 downto 0);
-        value2 : in std_logic_vector(3 downto 0);  
-        value3 : in std_logic_vector(3 downto 0);
-        value4 : in std_logic_vector(3 downto 0);
-        segs : out std_logic_vector(6 downto 0);
-        channels : out std_logic_vector(3 downto 0);
-        dp : out std_logic);
+component SevenSeg_Decoder is
+port ( X : in std_logic_vector(3 downto 0);
+        AN : out std_logic_vector(3 downto 0);
+        DP : out  std_logic;
+        CXX : out std_logic_vector(6 downto 0)
+        );
      end component;
    
 component AND_Operation4bit is
@@ -134,7 +131,8 @@ signal Pause_Reg:std_logic;
 
 begin
 
-Clock1: ClockDivider port map(clk=>clk, pause=>Pause_Reg, clkout=>MainClk);
+Display_data<="0000";
+Clock1: ClockDivider port map(clk=>clk, Pause=>Pause_Reg, clkout=>MainClk);
 Reg1: PIPO_4bit port map(A=>Ain, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>A_Reg);
 Reg2: PIPO_4bit port map(A=>Bin, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>B_Reg);
 Reg3: PIPO_4bit port map(A=>OP_Code, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>OP_Reg);
@@ -146,7 +144,7 @@ ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD
 AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>Display_data);
 OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>Display_data);
 XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>Display_data);
-dp<=dp_data;
-Display: MultipleOutputsOnto7SegDisplay port map(clk=>MainClk, value1=>"0000", value2=>"0000", value3=>"0000", value4=>Display_data, segs=>segs , channels=>channels , dp=>dp);
+DP<=dp_data;
+Display: SevenSeg_Decoder port map(X=>Display_data, AN=>AN, DP=>DP, CXX=>CXX);
 
 end Behavioral;

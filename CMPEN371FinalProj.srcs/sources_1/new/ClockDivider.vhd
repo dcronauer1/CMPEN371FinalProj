@@ -16,7 +16,7 @@ entity ClockDivider is
 port ( 
 
 clk : in std_logic;
-pause : in std_logic;
+Pause : in std_logic;
 clkout : out std_logic
 
 );
