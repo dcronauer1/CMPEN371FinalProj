@@ -128,6 +128,16 @@ component RippleCarryAdder_4bit is
           EX_SUM: out std_logic_vector(3 downto 0);
           EX_Cout: out std_logic);
     end component;
+    
+component IsOdd4bit is
+    Port ( A: in std_logic_vector(3 downto 0);
+          F: Out std_logic_vector(3 downto 0));
+    end component;
+component IsPrime4bit is
+    Port ( A: in std_logic_vector(3 downto 0);
+          F: Out std_logic_vector(3 downto 0));
+    end component;
+    
 --List of internal signals
 signal MainClk: std_logic;
 signal A_Reg: std_logic_vector (3 downto 0);
@@ -142,11 +152,11 @@ signal A_OR: std_logic_vector (3 downto 0);
 signal B_OR: std_logic_vector (3 downto 0);
 signal A_XOR: std_logic_vector (3 downto 0);
 signal B_XOR: std_logic_vector (3 downto 0);
---signal A_RShift: std_logic_vector (3 downto 0);
---signal A_LShift: std_logic_vector (3 downto 0);
---signal A_ODD: std_logic_vector (3 downto 0);
---signal A_EVEN: std_logic_vector (3 downto 0);
---signal A_PRIME: std_logic_vector (3 downto 0);
+signal A_RShift: std_logic_vector (3 downto 0);
+signal A_LShift: std_logic_vector (3 downto 0);
+signal A_ODD: std_logic_vector (3 downto 0);
+signal A_EVEN: std_logic_vector (3 downto 0);
+signal A_PRIME: std_logic_vector (3 downto 0);
 signal Display_data:std_logic_vector (3 downto 0);
 signal dp_data:std_logic;
 signal Pause_Reg:std_logic;
@@ -160,11 +170,6 @@ signal M_LSHIFT: std_logic_vector (3 downto 0);
 signal M_ODD: std_logic_vector (3 downto 0);
 signal M_EVEN: std_logic_vector (3 downto 0);
 signal M_PRIME: std_logic_vector (3 downto 0);
---signal A_RShift: std_logic_vector (3 downto 0)
---signal A_LShift: std_logic_vector (3 downto 0)
---signal A_ODD: std_logic_vector (3 downto 0);  
---signal A_EVEN: std_logic_vector (3 downto 0); 
---signal A_PRIME: std_logic_vector (3 downto 0);
 
 
 begin
@@ -176,17 +181,21 @@ Reg2: PIPO_4bit port map(A=>Bin, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>B_Reg);
 Reg3: PIPO_4bit port map(A=>OP_Code, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>OP_Reg);
 DFF1: DFF port map (clock=>MainClk, MyData=>Extra, OutD=>Extra_Reg);
 DFF2: DFF port map (clock=>MainClk, MyData=>Pause, OutD=>Pause_Reg);
-ADemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>A_Reg, SEL=>OP_Reg, y0=>A_ADD, y1=>A_AND, y2=>A_OR, y3=>A_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
+ADemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>A_Reg, SEL=>OP_Reg, y0=>A_ADD, y1=>A_AND, y2=>A_OR, y3=>A_XOR, y4=>A_RShift, y5=>A_LShift, y6=>A_ODD, y7=>A_EVEN, y8=>A_PRIME, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
 BDemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>B_Reg, SEL=>OP_Reg, y0=>B_ADD, y1=>B_AND, y2=>B_OR, y3=>B_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
 ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD, EX_SUM=>M_ADD, EX_Cout=>dp_data);
 AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>M_AND);
 OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>M_OR);
 XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>M_XOR);
--- make other logic stuff here
+--RSHIFT:   ;
+--LSHIFT:  ;
+ODD: IsOdd4bit port map(A=>A_ODD, F=>M_ODD);
+EVEN: IsOdd4bit port map(A=>A_EVEN, F=>M_EVEN); --dont need isEven <3 --FIX THIS!!!!
+PRIME: IsPrime4bit port map(A=>A_PRIME, F=>M_PRIME);
 
 DP<=dp_data;
 
-MUX1: One_to_SixteenMUX port map(DataOut=>Display_data, SEL=>OP_Reg, y0=>M_ADD, y1=>M_AND, y2=>M_OR, y3=>M_XOR, y4=>M_XOR, y5=>M_XOR, y6=>M_XOR, y7=>M_XOR, y8=>M_XOR, y9=>M_XOR, y10=>M_XOR, y11=>M_XOR, y12=>M_XOR, y13=>M_XOR, y14=>M_XOR, y15=>M_XOR);
+MUX1: One_to_SixteenMUX port map(DataOut=>Display_data, SEL=>OP_Reg, y0=>M_ADD, y1=>M_AND, y2=>M_OR, y3=>M_XOR, y4=>M_RSHIFT, y5=>M_LSHIFT, y6=>M_ODD, y7=>M_EVEN, y8=>M_PRIME, y9=>M_XOR, y10=>M_XOR, y11=>M_XOR, y12=>M_XOR, y13=>M_XOR, y14=>M_XOR, y15=>M_XOR);
 
 Display: SevenSeg_Decoder port map(X=>Display_data, AN=>AN, DP=>DP, CXX=>CXX);
 

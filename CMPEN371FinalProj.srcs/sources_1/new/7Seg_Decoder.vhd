@@ -12,6 +12,7 @@ entity SevenSeg_Decoder is
 port ( 
 
 X : in std_logic_vector(3 downto 0);
+-- make input for DP and handling
 AN : out std_logic_vector(3 downto 0);
 DP : out  std_logic;
 CXX : out std_logic_vector(6 downto 0)

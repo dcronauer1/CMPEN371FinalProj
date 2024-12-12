@@ -6,16 +6,12 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
---Asyncronus
---Load or shift
---dir
-
 entity IsOdd4bit is
     Port ( A : in std_logic_vector (3 downto 0);
-           B : out std_logic);
+           F : out std_logic_vector (3 downto 0));
 end IsOdd4bit;
 
 architecture rtl of IsOdd4bit is
 begin
-    B <= A(0);
+    F(0) <= A(0);
 end rtl;
