@@ -131,8 +131,10 @@ component RippleCarryAdder_4bit is
     
 component IsOdd4bit is
     Port ( A: in std_logic_vector(3 downto 0);
+          EVEN: in std_logic;
           F: Out std_logic_vector(3 downto 0));
     end component;
+    
 component IsPrime4bit is
     Port ( A: in std_logic_vector(3 downto 0);
           F: Out std_logic_vector(3 downto 0));
@@ -187,10 +189,10 @@ ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD
 AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>M_AND);
 OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>M_OR);
 XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>M_XOR);
---RSHIFT:   ;
---LSHIFT:  ;
-ODD: IsOdd4bit port map(A=>A_ODD, F=>M_ODD);
-EVEN: IsOdd4bit port map(A=>A_EVEN, F=>M_EVEN); --dont need isEven <3 --FIX THIS!!!!
+RSHIFT: PIPO_4bit port map(A=>Ain, LorS=>'1', Dir=>'1', Enclk=>MainClk, B=>A_Reg);
+LSHIFT: PIPO_4bit port map(A=>Ain, LorS=>'1', Dir=>'0', Enclk=>MainClk, B=>A_Reg);
+ODD: IsOdd4bit port map(A=>A_ODD, EVEN=>'0', F=>M_ODD);
+EVEN: IsOdd4bit port map(A=>A_EVEN, EVEN=>'1', F=>M_EVEN); --dont need isEven <3
 PRIME: IsPrime4bit port map(A=>A_PRIME, F=>M_PRIME);
 
 DP<=dp_data;
