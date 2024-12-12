@@ -16,6 +16,7 @@ entity PIPO_4bit is
            Dir : in std_logic;
            Enclk : in std_logic;
            push_val: in std_logic;
+           Reset: in std_logic;
            B : out std_logic_vector (3 downto 0));
 end PIPO_4bit;
 
@@ -26,18 +27,22 @@ begin
 process(Enclk)is
 begin
     if rising_edge(Enclk) then
-        if(LorS = '0') then
-        Q<=A;
-        else
-            if(dir = '1') then
-                Q(2 downto 0) <= Q(3 downto 1); --Right
-                Q(3) <= push_val;
+       if (Reset ='0') then     
+            if(LorS = '0') then
+            Q<=A;
             else
-                Q(3 downto 1) <= Q(2 downto 0); --Left
-                Q(0)<= push_val;
+                if(dir = '1') then
+                    Q(2 downto 0) <= Q(3 downto 1); --Right
+                    Q(3) <= push_val;
+                else
+                    Q(3 downto 1) <= Q(2 downto 0); --Left
+                    Q(0)<= push_val;
+                end if;
             end if;
-        end if;
-     end if;
+       else
+            Q <= "0000";
+       end if;
+   end if;
 end process;
 
     B <= Q;
