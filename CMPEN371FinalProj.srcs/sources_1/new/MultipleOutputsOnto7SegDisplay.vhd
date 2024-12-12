@@ -1,7 +1,7 @@
 -- Dominic Cronauer, Gabriel Genung
 -- dlc5994@psu.edu, mxg1342@psu.edu
 -- MultipleOutputsOnto7_SegDisplay.vhd
--- Version 1.0 , 12/6/2024
+-- Version 1.0 , 12/9/2024
 
 -- This file implements 
 

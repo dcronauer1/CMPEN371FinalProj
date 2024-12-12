@@ -1,7 +1,7 @@
 -- Dominic Cronauer, Gabriel Genung
 -- dlc5994@psu.edu, mxg1342@psu.edu
 -- AND_Operation4bit.vhd
--- Version 1.0 , 12/6/2024
+-- Version 1.0 , 12/9/2024
 
 -- 2 binary numbers AND operation 
 

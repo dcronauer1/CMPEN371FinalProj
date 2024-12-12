@@ -1,7 +1,7 @@
 -- Gabriel Genung, Dominic Cornauer
 -- mxg1342@psu.edu, dlc5994@psu.edu
 --One_to_SixteenMUX.vhd
--- Version 1.0 , 12/10/2024
+-- Version 1.0 , 12/11/2024
 
 --implements a one to sixteen mux with disconnect z 
 library IEEE;

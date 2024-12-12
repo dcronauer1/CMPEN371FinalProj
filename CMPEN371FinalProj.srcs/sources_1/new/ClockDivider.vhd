@@ -1,7 +1,7 @@
 -- Gabriel Genung, Dominic Cornauer
 -- mxg1342@psu.edu, dlc5994@psu.edu
 -- ClockDivider.vhd
--- Version 1.0 , 11/21/2024
+-- Version 1.0 , 12/11/2024
 
 
 -- This file devides the master clock with active high clock pause

@@ -1,7 +1,7 @@
 -- Gabriel Genung, Dominic Cornauer
 -- mxg1342@psu.edu, dlc5994@psu.edu
 --PIPO_4bit.vhd
--- Version 1.0 , 12/6/2024
+-- Version 1.0 , 12/11/2024
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;

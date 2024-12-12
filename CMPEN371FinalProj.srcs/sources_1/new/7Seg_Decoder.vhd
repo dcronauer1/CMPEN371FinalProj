@@ -2,7 +2,7 @@
 -- Gabriel Genung, Dominic Cornauer
 -- mxg1342@psu.edu, dlc5994@psu.edu
 -- 7Seg_Decoder.vhd
--- Version 1.0 , 12/8/2024
+-- Version 1.0 , 12/11/2024
 ----------------------------------------------------------------------------------
 
 library IEEE;

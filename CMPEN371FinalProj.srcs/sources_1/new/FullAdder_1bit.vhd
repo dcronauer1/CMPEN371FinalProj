@@ -1,7 +1,7 @@
 -- Cominic Cronaur, Gabriel Genung
 -- dlc5994@psu.edu, mxg1342@psu.edu
 -- FullAdder_1bit.vhd
--- Version 3.0 , 12/6/2024
+-- Version 3.0 , 12/9/2024
 
 -- design of 1-bit Full-Adder
 library IEEE;
