@@ -12,7 +12,7 @@ entity SevenSeg_Decoder is
 port ( 
 
 X : in std_logic_vector(3 downto 0);
--- make input for DP and handling
+DP_in : in std_logic;
 AN : out std_logic_vector(3 downto 0);
 DP : out  std_logic;
 CXX : out std_logic_vector(6 downto 0)
@@ -38,7 +38,7 @@ begin
  else "0100001" when (X="1101") 
  else "0000110" when (X="1110") 
  else "0001110" when (X="1111"); 
-    DP <= '1';
+    DP <= not(DP_in);
     AN <= "0111";
  
 end rtl;
