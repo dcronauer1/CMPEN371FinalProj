@@ -131,7 +131,7 @@ signal Pause_Reg:std_logic;
 
 begin
 
-Display_data<="0000";
+--Display_data<="0000";
 Clock1: ClockDivider port map(clk=>clk, Pause=>Pause_Reg, clkout=>MainClk);
 Reg1: PIPO_4bit port map(A=>Ain, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>A_Reg);
 Reg2: PIPO_4bit port map(A=>Bin, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>B_Reg);
