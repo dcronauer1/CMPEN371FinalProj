@@ -31,9 +31,9 @@ signal s: std_logic;
  
 begin
 	process(clk)
-	 begin
-if(pause = '0') then	 
-   if (clk'event and clk = '1') then
+	 begin	 
+if (clk'event and clk = '1') then
+    if(pause = '0') then
          -- 
          -- The counter below will reset every 50000000 rising edges, which is every 6.250 Million cycles
              if (cnt = "10111110101111000010000000") then -- 10111110101111000010000000 Binary to 125000 Decimal
@@ -42,6 +42,8 @@ if(pause = '0') then
              else
                  cnt <= cnt +1;
              end if;
+     else
+        s <= '0';
      end if;
  end if;
      end process;

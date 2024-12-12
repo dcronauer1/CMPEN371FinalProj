@@ -20,7 +20,7 @@ entity FinalPROJ is
            OP_Code : in STD_LOGIC_VECTOR (3 downto 0);
            Extra : in STD_LOGIC;
            Pause : in STD_LOGIC;  --permanently pauses?
-           Reset : in STD_LOGIC; --not wired??
+           Reset : in STD_LOGIC; --doesnt do anything, probably dont need though
            clk: in STD_LOGIC;
            --Data_Out : out STD_LOGIC_VECTOR (3 downto 0);
           -- Carry_Out : out STD_LOGIC
@@ -183,7 +183,7 @@ Reg1: PIPO_4bit port map(A=>Ain, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>A_Reg);
 Reg2: PIPO_4bit port map(A=>Bin, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>B_Reg);
 Reg3: PIPO_4bit port map(A=>OP_Code, LorS=>'0', Dir=>'0', Enclk=>MainClk, B=>OP_Reg);
 DFF1: DFF port map (clock=>MainClk, MyData=>Extra, OutD=>Extra_Reg);
-DFF2: DFF port map (clock=>MainClk, MyData=>Pause, OutD=>Pause_Reg);
+DFF2: DFF port map (clock=>clk, MyData=>Pause, OutD=>Pause_Reg); --dont use MainClk here lol
 ADemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>A_Reg, SEL=>OP_Reg, y0=>A_ADD, y1=>A_AND, y2=>A_OR, y3=>A_XOR, y4=>A_RShift, y5=>A_LShift, y6=>A_ODD, y7=>A_EVEN, y8=>A_PRIME, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
 BDemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>B_Reg, SEL=>OP_Reg, y0=>B_ADD, y1=>B_AND, y2=>B_OR, y3=>B_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
 ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD, EX_SUM=>M_ADD, EX_Cout=>dp_data);
