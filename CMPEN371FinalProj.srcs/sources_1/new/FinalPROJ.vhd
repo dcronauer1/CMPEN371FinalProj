@@ -61,6 +61,28 @@ component One_to_Sixteen4Bit_DEMUX is
            y14 : out STD_LOGIC_VECTOR (3 downto 0);
            y15 : out STD_LOGIC_VECTOR (3 downto 0));
     end component;
+    
+component One_to_SixteenMUX is
+    port ( DataOut : out STD_LOGIC_VECTOR (3 downto 0);
+          SEL : in STD_LOGIC_VECTOR (3 downto 0);
+           y0 : in STD_LOGIC_VECTOR (3 downto 0);
+           y1 : in STD_LOGIC_VECTOR (3 downto 0);
+           y2 : in STD_LOGIC_VECTOR (3 downto 0);
+           y3 : in STD_LOGIC_VECTOR (3 downto 0);
+           y4 : in STD_LOGIC_VECTOR (3 downto 0);
+           y5 : in STD_LOGIC_VECTOR (3 downto 0);
+           y6 : in STD_LOGIC_VECTOR (3 downto 0);
+           y7 : in STD_LOGIC_VECTOR (3 downto 0);
+           y8 : in STD_LOGIC_VECTOR (3 downto 0);
+           y9 : in STD_LOGIC_VECTOR (3 downto 0);
+           y10 :in  STD_LOGIC_VECTOR (3 downto 0);
+           y11 :in  STD_LOGIC_VECTOR (3 downto 0);
+           y12 :in  STD_LOGIC_VECTOR (3 downto 0);
+           y13 :in  STD_LOGIC_VECTOR (3 downto 0);
+           y14 :in  STD_LOGIC_VECTOR (3 downto 0);
+           y15 :in  STD_LOGIC_VECTOR (3 downto 0));
+end component;
+
 
 component PIPO_4bit is
     port ( A : in std_logic_vector (3 downto 0);
@@ -129,6 +151,22 @@ signal Display_data:std_logic_vector (3 downto 0);
 signal dp_data:std_logic;
 signal Pause_Reg:std_logic;
 
+signal M_ADD: std_logic_vector (3 downto 0);
+signal M_AND: std_logic_vector (3 downto 0);
+signal M_OR: std_logic_vector (3 downto 0);
+signal M_XOR: std_logic_vector (3 downto 0);
+signal M_RSHIFT: std_logic_vector (3 downto 0);
+signal M_LSHIFT: std_logic_vector (3 downto 0);
+signal M_ODD: std_logic_vector (3 downto 0);
+signal M_EVEN: std_logic_vector (3 downto 0);
+signal M_PRIME: std_logic_vector (3 downto 0);
+--signal A_RShift: std_logic_vector (3 downto 0)
+--signal A_LShift: std_logic_vector (3 downto 0)
+--signal A_ODD: std_logic_vector (3 downto 0);  
+--signal A_EVEN: std_logic_vector (3 downto 0); 
+--signal A_PRIME: std_logic_vector (3 downto 0);
+
+
 begin
 
 --Display_data<="0000";
@@ -140,11 +178,16 @@ DFF1: DFF port map (clock=>MainClk, MyData=>Extra, OutD=>Extra_Reg);
 DFF2: DFF port map (clock=>MainClk, MyData=>Pause, OutD=>Pause_Reg);
 ADemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>A_Reg, SEL=>OP_Reg, y0=>A_ADD, y1=>A_AND, y2=>A_OR, y3=>A_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
 BDemux: One_to_Sixteen4Bit_DEMUX port map(DataIn=>B_Reg, SEL=>OP_Reg, y0=>B_ADD, y1=>B_AND, y2=>B_OR, y3=>B_XOR, y4=>open, y5=>open, y6=>open, y7=>open, y8=>open, y9=>open, y10=>open, y11=>open, y12=>open, y13=>open, y14=>open, y15=>open);
-ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD, EX_SUM=>Display_data, EX_Cout=>dp_data);
-AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>Display_data);
-OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>Display_data);
-XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>Display_data);
+ADD1: RippleCarryAdder_4bit port map(EX_Cin=>Extra_Reg, EX_A=>A_ADD, EX_B=>B_ADD, EX_SUM=>M_ADD, EX_Cout=>dp_data);
+AND1: AND_Operation4bit port map(A=>A_AND, B=>B_AND, F=>M_AND);
+OR1: OR_Operation4bit port map(A=>A_OR, B=>B_OR, F=>M_OR);
+XOR1: XOR_Operation4bit port map(A=>A_XOR, B=>B_XOR, F=>M_XOR);
+-- make other logic stuff here
+
 DP<=dp_data;
+
+MUX1: One_to_SixteenMUX port map(DataOut=>Display_data, SEL=>OP_Reg, y0=>M_ADD, y1=>M_AND, y2=>M_OR, y3=>M_XOR, y4=>M_XOR, y5=>M_XOR, y6=>M_XOR, y7=>M_XOR, y8=>M_XOR, y9=>M_XOR, y10=>M_XOR, y11=>M_XOR, y12=>M_XOR, y13=>M_XOR, y14=>M_XOR, y15=>M_XOR);
+
 Display: SevenSeg_Decoder port map(X=>Display_data, AN=>AN, DP=>DP, CXX=>CXX);
 
 end Behavioral;
