@@ -15,6 +15,7 @@ entity PIPO_4bit is
            LorS : in std_logic;
            Dir : in std_logic;
            Enclk : in std_logic;
+           push_val: in std_logic;
            B : out std_logic_vector (3 downto 0));
 end PIPO_4bit;
 
@@ -30,10 +31,10 @@ begin
         else
             if(dir = '1') then
                 Q(2 downto 0) <= Q(3 downto 1); --Right
-                Q(3) <= '0';
+                Q(3) <= push_val;
             else
                 Q(3 downto 1) <= Q(2 downto 0); --Left
-                Q(0)<= '0';
+                Q(0)<= push_val;
             end if;
         end if;
      end if;

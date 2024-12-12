@@ -41,10 +41,10 @@ set_property PACKAGE_PIN W2 [get_ports {Extra}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {Extra}]
 set_property PACKAGE_PIN U1 [get_ports {Pause}]					 
 	set_property IOSTANDARD LVCMOS33 [get_ports {Pause}]
-set_property PACKAGE_PIN T1 [get_ports {Reset}]		              		
-	set_property IOSTANDARD LVCMOS33 [get_ports {Reset}]
-#set_property PACKAGE_PIN R2 [get_ports {sw[15]}]					
-	#set_property IOSTANDARD LVCMOS33 [get_ports {sw[15]}]
+set_property PACKAGE_PIN T1 [get_ports {LorS}]		              		
+	set_property IOSTANDARD LVCMOS33 [get_ports {LorS}]
+set_property PACKAGE_PIN R2 [get_ports {PushVal}]					
+	set_property IOSTANDARD LVCMOS33 [get_ports {PushVal}]
  
 
 ## LEDs
